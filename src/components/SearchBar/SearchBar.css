@@ -59,20 +59,28 @@
   
   .SearchBar-submit {
     text-align: center;
+    transform: scale(1.2);
+    transition: transform .3s ease;
+  }
+
+  .SearchBar-submit:hover {
+    transform: scale(1);
   }
   
   .SearchBar-submit a {
     border-radius: 4px;
     padding: .72rem 1.7rem;
     background-color: #cca353;
-    color: #ffffff;
+    color: #ffe1ad;
     font-weight: 600;
-    transition: background-color .5s;
+    transition: all .8s ease;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
   }
   
   .SearchBar-submit a:hover {
     cursor: pointer;
     background-color: #a7874b;
+    box-shadow: none;
   }
   
   @media only screen and (max-width: 560px) {
